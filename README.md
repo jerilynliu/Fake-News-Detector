@@ -1,4 +1,8 @@
 # NLP_Fake News Detector
+
+Project launched time: 2019.8
+Edited by Yichen Liu (Leader of research Group 1)
+
 This project aims at creating an advanced binary classifier to set fake news apart from real ones.
 This repo contains the original dataset that is utilized to test the constructed pipeline.
 
