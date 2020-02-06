@@ -30,7 +30,7 @@ And then I chose a classifier that functions better, Xgboost.
 
 <div align=center><img width="800" height="500" src="https://github.com/jerilynliu/NLP_Fake-News-Detector/blob/master/Images/Xgboost.PNG"/></div>
 
-It has a lot of hyperparameters. I basically listed 10. And I found it impossible to conduct a grid search. So I break this hypertuning process into several parts. 
+It has a lot of hyperparameters. I basically listed 10. And I found it impossible to conduct a full grid search on my laptop. So I break this hypertuning process into several parts. 
 
 First I used grid search to determine the most suitable value for three different hyperparameters respectively, then fix them and hypertune other parameters.
 First max depth, then learning rate and n estimators. I fixed them and we can see it has already given us a good performance.
