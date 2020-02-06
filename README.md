@@ -4,6 +4,10 @@ This repo contains the original dataset that is utilized to test the constructed
 
 The pipeline mainly consists of two parts: Word Embedding and Binary Classification.
 
+<div align=center><img width="800" height="500" src="https://github.com/jerilynliu/NLP_Fake-News-Detector/blob/master/Images/pipeline.PNG"/></div>
+
+https://github.com/jerilynliu/NLP_Fake-News-Detector/blob/master/Images/pipeline.PNG
+
 I used GloVe as the word embedding method, and then I employed two classifiers to do the classification. First I'm gonna explain why I chose GloVe. Part of the reason is that I wanted to try something different than the common methods like word2vec.
 
 Word2vec and glove are fundamentally similar. They both learn vectors of words from their co-occurrence information.They differ in that word2vec is a "predictive" model, whereas GloVe is a "count-based" model. 
@@ -12,7 +16,9 @@ a Stanford research website. I used the 300 dimension embedding and the one I cl
 
 So what I basically did is: I first tokenized the data, removed the stopwords, and then I used the glove embedding to assign each sentence a specific vector. Once done with the embedding part, we can jump to classification and hypertuning.
 
-The first classifier that I used is KNN, K nearest neighbor. There are three major hyperparameters that need to be adjusted. I found that the best K is three and the better weight value is 'uniform', so
+The first classifier that I used is KNN, K nearest neighbor.
+
+There are three major hyperparameters that need to be adjusted. I found that the best K is three and the better weight value is 'uniform', so
  there is no need for us to further hypertune the value of p.
 I used this AUC metric to better visualize the hypertuning process, we can see that when K equals 3, there comes the best performance. Although this performance is rather unsatisfactory. It gives us a 
 high precision but a really low recall.
